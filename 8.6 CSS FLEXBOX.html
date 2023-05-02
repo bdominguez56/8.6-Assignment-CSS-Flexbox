@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>8.6 Assignment: CSS Flexbox</title>
+<style>
+.flex-container {
+    display: flex;
+    background-color: paleturquoise;
+}
+.flex-container > div {
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+}
+.stack > div {
+    flex-direction: column;
+    padding: 20px;
+}
+#container {
+    width: 800px;
+    margin: 0 auto;
+}
+.section_L {
+    flex-grow: 3;
+}
+	.ui-tabs .ui-tabs-nav {
+		font-size: 10px;
+	}
+.section_R {
+    flex-grow: 2;
+}
+</style>
+<link rel="stylesheet" href="jquery-ui.css">
+<link rel="stylesheet" href="jquery-ui.structure.css">
+<link rel="stylesheet" href="jquery-ui.theme.css">
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script> 
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script> 
+<script>
+  $( function() {
+    $( "#accordion" ).accordion();
+  } );
+		  $( function() {
+    $( "#dogs" ).tabs();
+  } );
+  </script>
+</head>
+<body>
+<div id="container">
+  <h1>8.6 Assignment: CSS Flexbox</h1> 
+
+  <div class="flex-container">
+    <div class="section_L">Big block</div>
+    <div class="stack section_R">
+      <div>stack 1</div>
+      <div>stack 2</div>
+    </div>
+  </div>
+  <div class="flex-container">
+    <div class="section_L">big block</div>
+    <div class="stack section_R">
+      <div>stack 1</div>
+      <div>stack 2</div>
+    </div>
+    <div class="section_L">
+      <div id="accordion">
+        <h3>Section 1</h3>
+        <div>
+          <p> PUT WHATEVER HERE </p>
+        </div>
+        <h3>Section 2</h3>
+        <div>
+          <p> PUT WHATEVER HERE</p>
+        </div>
+        <h3>Section 3</h3>
+        <div>
+          <p> PUT WHATEVER HERE </p>
+          <ul>
+            <li>List item one</li>
+            <li>List item two</li>
+            <li>List item three</li>
+          </ul>
+        </div>
+        <h3>Section 4</h3>
+        <div>
+          <p> PUT WHATEVER HERE</p>
+          <p> PUT WHATEVER HERE </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="flex-container">
+    <div class="section_L">
+      <div id="dogs">
+        <ul>
+          <li><a href="#tabs-1">PUT WHATEVER HERE</a></li>
+          <li><a href="#tabs-2">PUT WHATEVER HERE</a></li>
+          <li><a href="#tabs-3">PUT WHATEVER HERE</a></li>
+        </ul>
+        <div id="tabs-1">
+          <p>PUT WHATEVER HERE</p>
+        </div>
+        <div id="tabs-2">
+          <p>PUT WHATEVER HERE</p>
+        </div>
+        <div id="tabs-3">
+          <p>PUT WHATEVER HERE</p>
+          <p>PUT WHATEVER HERE</p>
+        </div>
+      </div>
+    </div>
+    <div class="stack section_R">
+      <div>PUT WHATEVER HERE</div>
+      <div>Stack 2</div>
+    </div>
+    <div class="section_L">PUT WHATEVER HERE</div>
+  </div>
+  <div class="flex-container">
+    <div class="section_L" style="flex: 50%;">PUT WHATEVER HERE</div>
+    <div class="stack section_R" style="flex: 50%;">
+      <div>PUT WHATEVER HERE</div>
+      <div>PUT WHATEVER HERE</div>
+    </div>
+  </div>
+  <div class="flex-container">
+    <div style="flex: 33.33%;" >PUT WHATEVER HERE</div>
+    <div style="flex: 33.33%;">PUT WHATEVER HERE</div>
+    <div style="flex: 33.33%;">PUT WHATEVER HERE</div>
+  </div>
+</div>
+</body>
+	
+</html>
